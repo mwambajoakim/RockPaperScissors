@@ -27,7 +27,13 @@ else {
 
 
 //Define a function for the Human choice
-function getHumanChoice(choice) {
-    
+function getHumanChoice() {
+let choice = window.prompt();
+
+if (choice === "Rock" || choice === "Paper" || choice === "Scissors") {
+    return choice;
 }
+}
+
+console.log(getHumanChoice());
 
