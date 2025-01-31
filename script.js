@@ -28,12 +28,18 @@ else {
 
 //Define a function for the Human choice
 function getHumanChoice() {
+    
+//Create Variable where human choice will be stored after filling prompt
 let choice = window.prompt();
 
+//Display  humn's choice according to what they chose
 if (choice === "Rock" || choice === "Paper" || choice === "Scissors") {
     return choice;
 }
 }
+
+let humancore = 0;
+let computercore = 0;
 
 console.log(getHumanChoice());
 console.log(getComputerChoice());
