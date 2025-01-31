@@ -36,4 +36,5 @@ if (choice === "Rock" || choice === "Paper" || choice === "Scissors") {
 }
 
 console.log(getHumanChoice());
+console.log(getComputerChoice());
 
