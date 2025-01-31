@@ -22,8 +22,12 @@ else {
     else if (rand === 3) {
         return "Scissors";
     }
-}
+    }
 }
 
-console.log(getComputerChoice());
+
+//Define a function for the Human choice
+function getHumanChoice(choice) {
+    
+}
 
