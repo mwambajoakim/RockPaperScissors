@@ -28,7 +28,7 @@ else {
 
 //Define a function for the Human choice
 function getHumanChoice() {
-    
+
 //Create Variable where human choice will be stored after filling prompt
 let choice = window.prompt();
 
@@ -38,8 +38,13 @@ if (choice === "Rock" || choice === "Paper" || choice === "Scissors") {
 }
 }
 
-let humancore = 0;
-let computercore = 0;
+let humanScore = 0;
+let computerScore = 0;
+
+//Create a function for playing rounds
+function playRound() {
+    
+}
 
 console.log(getHumanChoice());
 console.log(getComputerChoice());
