@@ -42,8 +42,10 @@ let humanScore = 0;
 let computerScore = 0;
 
 //Create a function for playing rounds
-function playRound() {
-    
+function playRound(humanChoice, computerChoice) {
+
+    humanChoice = humanChoice.toLowerCase();
+
 }
 
 console.log(getHumanChoice());
