@@ -74,6 +74,4 @@ function playRound(humanChoice, computerChoice) {
 console.log(getHumanChoice());
 console.log(getComputerChoice());
 
-let name = "Joakim Mwamba";
-console.log(`Hello Mr. ${name}`);
 
