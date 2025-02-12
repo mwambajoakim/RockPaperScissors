@@ -7,11 +7,7 @@ function getComputerChoice() {
 let rand = Math.floor(Math.random() * 10);
 
 //Exclusively get three numbers; 1, 2, and 3
-if (rand === 0 && rand >= 4) {
-    return;
-}
-
-else {
+if (rand > 0 && rand < 4) {
     //Assign "Rock" to 1
     if (rand === 1) {
         return "Rock";
@@ -44,41 +40,36 @@ let humanScore = 0;
 let computerScore = 0;
 
 //Create a function for playing rounds
-function playRound(humanSelection, computerSelection) {
-    humanSelection = getHumanChoice();
-    computerSelection = getComputerChoice();
-
-    if (humanSelection === "Paper" && computerSelection === "Rock") {
+function playRound(humanChoice, computerChoice) {
+    
+    if (humanChoice === "Paper" && computerChoice === "Rock") {
         console.log("You won!");
     }
 
-    else if (humanSelection === "Rock" &&  computerSelection === "Paper") {
+    else if (humanChoice === "Rock" &&  computerChoice === "Paper") {
         console.log("You lost. Paper wins!");
     }
 
-    else if (humanSelection === "Scissors" &&  computerSelection === "Paper") {
+    else if (humanChoice === "Scissors" &&  computerChoice === "Paper") {
         concole.log("You won!");
     }
 
-    else if (humanSelection === "Paper" &&  computerSelection === "Scissors") {
+    else if (humanChoice === "Paper" &&  computerChoice === "Scissors") {
          console.log("You lost. Scissors wins!");
     }
 
-    else if (humanSelection === "Rock" &&  computerSelection === "Scissors") {
+    else if (humanChoice === "Rock" &&  computerChoice === "Scissors") {
         console.log("You won!");
     }
 
-    else if (humanSelection === "Scissors" &&  computerSelection === "Rock") {
+    else if (humanChoice === "Scissors" &&  computerChoice === "Rock") {
         console.log("You lost. Rock wins");
     }
 
 }
 
-
-console.log(getHumanChoice());
-console.log(getComputerChoice());
-
-
-console.log(playRound(humanSelection, computerSelection));
+const humanChoice = getHumanChoice();
+const computerChoice = getComputerChoice();
+console.log(playRound(humanChoice, computerChoice));
 
 
